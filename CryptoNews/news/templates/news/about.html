@@ -1,7 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'news/base.html' %}
 
 {% block content %}
 
-{{ new }}
+{% for new in news %}
+    <p>{{ new.title }}</p>
+    <a href="{{ new.url }}" >Ссылка</a>
+    <br>
+{% endfor %}
 
 {% endblock %}

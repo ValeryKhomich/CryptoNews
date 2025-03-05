@@ -1,0 +1,41 @@
+:root {
+    --color_dark: #191A23;
+    --color-light: #FFFFFF;
+    --color-blue: #0080c8;
+    --color-blue-dark: #0366a3;
+
+    --color-bg-body: #FFFFFF;
+    --color-bg-elements: #0080c8;
+    --color-bg-elements-deep: #0366a3;
+    --color-bg-elements-dark-theme: #848484;
+
+
+    --border: 1px solid var(--color_dark);
+    --border-radius: 14px;
+    --border-radius-small: 7px;
+    --border-radius-large: 45px;
+
+    --shadow: 0px 5px 0px 0px var(--color_dark);
+
+    --font-family-base: 'Space Grotesk', sans-serif;
+
+    --container-width: 1240px;
+    --container-padding-x: 20px;
+
+    --section-padding-y: 70px;
+
+    --input-height: 59px;
+    --button-height: 68px;
+
+    --transition-duration: 0.2s;
+
+
+    @include desktop {
+        --section-padding-y: 50px;
+    }
+    
+    @include mobile {
+        --section-padding-y: 30px;
+    }
+
+}

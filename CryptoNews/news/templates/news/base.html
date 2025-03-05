@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="../../static/news/css/styles.css"> -->
+    <!-- для джанго -->
+    <link rel="stylesheet" href="{% static 'news/css/styles.css' %}">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="" class="header__logo">CryptoNews</a>
+
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            news
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            buy crypto
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            events
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            meme coins
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            about
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button 
+                id="theme-toggle" 
+                class="header__button" 
+                data-light="{% static 'news/images/sun-icon.svg' %}" data-dark="{% static 'news/images/moon-icon.svg' %}">
+                    <img src="{% static 'news/images/moon-icon.svg' %}"
+                    id="theme-icon" alt="sun" class="header__icon" width="22" height="22" loading="lazy">
+            </button>
+
+            <!-- <button id="theme-toggle" data-light="{% static 'icons/sun.svg' %}" data-dark="{% static 'icons/moon.svg' %}">
+                <img id="theme-icon" src="{% static 'icons/sun.svg' %}" alt="Theme Icon" width="30">
+            </button> -->
+
+        </div>
+    </header>
+
+
+    {% block content %} {% endblock %}
+    <script src="{% static 'news/js/script.js' %}"></script>
+</body>
+</html>
+
+
