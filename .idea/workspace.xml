@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea346933-7c0d-472a-80ff-8f58d5815450" name="Changes" comment="First">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/templates/news/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/templates/news/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptoNews/news/templates/news/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/templates/news/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
