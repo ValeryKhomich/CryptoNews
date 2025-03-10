@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea346933-7c0d-472a-80ff-8f58d5815450" name="Changes" comment="Hidden secret-key django">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/CryptoNews/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/CryptoNews/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/_globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/_globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/blocks/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/blocks/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/static/news/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/static/news/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoNews/news/templates/news/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoNews/news/templates/news/base.html" afterDir="false" />
-    </list>
+    <list default="true" id="ea346933-7c0d-472a-80ff-8f58d5815450" name="Changes" comment="Hidden secret-key django" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
