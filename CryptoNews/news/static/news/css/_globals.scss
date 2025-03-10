@@ -1,8 +1,8 @@
 body {
     @include fluid-text(18, 16);
 
-    background-color: var(--color-bg-body);
-    color: var(--color_dark);
+    background-color: var(--color-bg);
+    color: var(--color-text);
     transition: background 0.3s, color 0.3s;
 
     font-family: var(--font-family-base);
@@ -46,7 +46,8 @@ h4 {
 
 /* Тёмная тема */
 .dark-theme {
-    --color-bg-body: var(--color_dark);
-    --color-bg-elements: var(--color_dark);
-    --color-bg-elements-deep: var(--color-bg-elements-dark-theme);
+    --color-bg: var(--color_dark);
+    --color-text: var(--color-light);
+    --color-bg-element-light: var(--color-blue-dark);
+    --color-bg-element-dark: var(--color-blue-ligth);
 }

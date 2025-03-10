@@ -1,12 +1,10 @@
 .header {
-    background-color: var(--color-bg-elements);
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
         padding-block: 10px;
-        color: var(--color-light);
     }
 
     &__logo {
@@ -14,6 +12,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mobile {
+            flex-grow: 1;
+            justify-content: left;
+        }
+        
+        
     }
 
     &__menu {
@@ -61,7 +66,7 @@
     }
 
     &__button {
-        background-color: var(--color-bg-elements-deep);
+        background-color: var(--color-bg-element-dark);
         padding: 10px 10px;
         border: none;
         border-radius: 50%;

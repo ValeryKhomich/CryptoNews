@@ -1,9 +1,12 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../static/news/css/styles.css"> -->
     <link rel="stylesheet" href="{% static 'news/css/styles.css' %}">
     <title>{{ title }}</title>
 </head>
@@ -41,7 +44,7 @@
                     </li>
                 </ul>
             </nav>
-
+            
             <button 
                 id="theme-toggle" 
                 class="header__button" 
@@ -50,13 +53,47 @@
                     id="theme-icon" alt="sun" class="header__icon" width="22" height="22" loading="lazy">
             </button>
 
-
+            <button 
+            class="header__burger-button button__burger-menu burger-button visible-mobile"
+            onclick="mobileOverlay.showModal()"
+            >
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
 
         </div>
     </header>
 
 
+
     {% block content %} {% endblock %}
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">news</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">buy crypto</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">events</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">meme coins</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">about</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
     <script src="{% static 'news/js/script.js' %}"></script>
 </body>
 </html>

@@ -1,14 +1,13 @@
 :root {
     --color_dark: #191A23;
     --color-light: #FFFFFF;
-    --color-blue: #0080c8;
-    --color-blue-dark: #0366a3;
+    --color-blue-ligth: #51bfff;
+    --color-blue-dark: #006097;
 
-    --color-bg-body: #FFFFFF;
-    --color-bg-elements: #0080c8;
-    --color-bg-elements-deep: #0366a3;
-    --color-bg-elements-dark-theme: #848484;
-
+    --color-bg: #FFFFFF;
+    --color-text: #191A23;
+    --color-bg-element-light: #51bfff;
+    --color-bg-element-dark: #006097;
 
     --border: 1px solid var(--color_dark);
     --border-radius: 14px;

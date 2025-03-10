@@ -216,12 +216,12 @@ svg * {
 :root {
   --color_dark: #191A23;
   --color-light: #FFFFFF;
-  --color-blue: #0080c8;
-  --color-blue-dark: #0366a3;
-  --color-bg-body: #FFFFFF;
-  --color-bg-elements: #0080c8;
-  --color-bg-elements-deep: #0366a3;
-  --color-bg-elements-dark-theme: #848484;
+  --color-blue-ligth: #51bfff;
+  --color-blue-dark: #006097;
+  --color-bg: #FFFFFF;
+  --color-text: #191A23;
+  --color-bg-element-light: #51bfff;
+  --color-bg-element-dark: #006097;
   --border: 1px solid var(--color_dark);
   --border-radius: 14px;
   --border-radius-small: 7px;
@@ -281,8 +281,8 @@ svg * {
 
 body {
   font-size: clamp(16px, 1.25vw, 18px);
-  background-color: var(--color-bg-body);
-  color: var(--color_dark);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   transition: background 0.3s, color 0.3s;
   font-family: var(--font-family-base);
   font-weight: 400;
@@ -324,26 +324,61 @@ h4 {
 
 /* Тёмная тема */
 .dark-theme {
-  --color-bg-body: var(--color_dark);
-  --color-bg-elements: var(--color_dark);
-  --color-bg-elements-deep: var(--color-bg-elements-dark-theme);
+  --color-bg: var(--color_dark);
+  --color-text: var(--color-light);
+  --color-bg-element-light: var(--color-blue-dark);
+  --color-bg-element-dark: var(--color-blue-ligth);
 }
 
-.header {
-  background-color: var(--color-bg-elements);
+.burger-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: var(--border-radius-small);
 }
+@media (hover: hover) {
+  .burger-button:hover {
+    background-color: var(--color-bg-element-light);
+  }
+}
+@media (hover: none) {
+  .burger-button:active {
+    background-color: var(--color-bg-element-light);
+  }
+}
+.burger-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--color-text);
+  border-radius: 5px;
+  box-shadow: 0 -8px var(--color-text), 0 8px var(--color-text);
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   padding-block: 10px;
-  color: var(--color-light);
 }
 .header__logo {
   align-self: stretch; /* Растягивает кнопку по высоте родителя */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    flex-grow: 1;
+    justify-content: left;
+  }
 }
 .header__menu-list {
   display: flex;
@@ -387,7 +422,7 @@ h4 {
   justify-content: center;
 }
 .header__button {
-  background-color: var(--color-bg-elements-deep);
+  background-color: var(--color-bg-element-dark);
   padding: 10px 10px;
   border: none;
   border-radius: 50%;
@@ -399,4 +434,66 @@ h4 {
 }
 .header__icon {
   filter: invert(1);
+}
+
+.cross-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: var(--border-radius-small);
+}
+@media (hover: hover) {
+  .cross-button:hover {
+    background-color: var(--color-bg-element-light);
+  }
+}
+@media (hover: none) {
+  .cross-button:active {
+    background-color: var(--color-bg-element-light);
+  }
+}
+.cross-button::before, .cross-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  width: 70%;
+  height: 2px;
+  background-color: var(--color-text);
+  border-radius: 5px;
+}
+.cross-button::before {
+  rotate: 45deg;
+}
+.cross-button::after {
+  rotate: -45deg;
+}
+
+.mobile-overlay {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 14px 20px;
+  border: none;
+}
+.mobile-overlay:modal {
+  max-width: 100%;
+  max-height: 100%;
+}
+.mobile-overlay__close-button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.mobile-overlay__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  min-height: 80vh;
 }/*# sourceMappingURL=styles.css.map */
