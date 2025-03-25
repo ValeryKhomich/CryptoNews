@@ -1,0 +1,16 @@
+{% extends 'news/base.html' %}
+
+{% block content %}
+
+{% for new in news %}
+
+    {{ new.title }}<br>
+    <a href="{% url 'one_of_news' new.id %}">Ссылка на этот пост</a><br>
+    <a href="{{ new.source }}" target="_blank">Ссылка на сайт другой</a><br>
+    <p>Опубликовано {{ new.published_at|timesince }} назад</p>
+    <br>
+    <br>
+
+{% endfor %}
+
+{% endblock %}
